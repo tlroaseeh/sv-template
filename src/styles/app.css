@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 你可以在这里添加一些自定义的基础样式，但尽量让 Tailwind 处理 */
+body {
+  @apply bg-gray-50 text-gray-900 font-sans;
+}
