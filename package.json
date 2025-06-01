@@ -1,5 +1,5 @@
 {
-	"name": "my-template",
+	"name": "sv-template",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -13,7 +13,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"test": "npm run test:unit -- --run",
+		"postinstall": "node scripts/setup.js && npm install"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
